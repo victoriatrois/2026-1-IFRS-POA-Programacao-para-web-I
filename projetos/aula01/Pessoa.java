@@ -1,3 +1,5 @@
+package aula01;
+
 // Toda classe herda da Object
 public class Pessoa {
     private String nome;
@@ -40,7 +42,7 @@ public class Pessoa {
     // se não declararmos o toString, o da super Object é usado e ele determina que se imprima o <nome da cLasse>@<endereço do objeto na JVM>
     @Override
     public String toString() {
-        return "Pessoa{" +
+        return "aula02.Pessoa{" +
                 "nome='" + nome + '\'' +
                 ", telefone='" + telefone + '\'' +
                 ", endereco='" + endereco + '\'' +
