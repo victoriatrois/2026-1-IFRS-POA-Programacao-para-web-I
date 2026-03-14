@@ -30,9 +30,11 @@ public class Depertamento {
 
     @Override
     public String toString() {
-        return "Depertamento{" +
-                "nome='" + nome + '\'' +
-                ", gerente=" + gerente.toString() +
-                '}';
+        return String.format("""
+            Departamento {
+            \tnome: %s
+            \t gerente: %s
+            }
+            """, nome, gerente);
     }
 }

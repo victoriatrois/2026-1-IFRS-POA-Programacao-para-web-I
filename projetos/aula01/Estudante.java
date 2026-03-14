@@ -52,12 +52,22 @@ public class Estudante extends Pessoa {
 
     @Override
     public String toString() {
-        return super.toString() + '\n' +
-                "Estudante{" +
-                "matricula=" + matricula +
-                ", curso='" + curso + '\'' +
-                ", situacao=" + situacao +
-                "," + (cpf != null ? cpf.toString() : "CPF inválido") +
-                '}';
+        String numeroDoCpf = (cpf != null) ? cpf.toString() : "CPF não cadastrado";
+
+        return String.format("""
+            %s
+            \tEstudante {
+            \t\tmatrícula: %d
+            \t\tcurso: %s
+            \t\tsituação: %d
+            \t\tCPF: %s
+            \t}
+            """,
+            super.toString(),
+            matricula,
+            curso,
+            situacao,
+            numeroDoCpf
+        );
     }
 }

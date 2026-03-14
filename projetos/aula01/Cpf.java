@@ -13,9 +13,11 @@ public class Cpf {
 
     @Override
     public String toString() {
-        return "Cpf{" +
-                "numero=" + numero +
-                ", digito=" + digito +
-                '}';
+    return String.format("""
+        Cpf {
+        \tnumero: %d
+        \tdigito: %d
+        }
+        """, numero, digito);
     }
 }

@@ -52,11 +52,18 @@ public class Funcionario extends Pessoa {
             }
         }
 
-        return super.toString() + '\n' +
-                "Funcionario {" +
-                "salario=" + salario +
-                ", cargo='" + cargo + '\'' +
-                ", telefones='" + auxiliar + '\'' +
-                '}';
+        return String.format("""
+            %s
+            \tFuncionário {
+            \t\tsalario: %d
+            \t\tcargo: %s
+            \t\ttelefones: %s
+            \t}
+            """,
+            super.toString(),
+            salario,
+            cargo,
+            auxiliar
+        );
     }
 }

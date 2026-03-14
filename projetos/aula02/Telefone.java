@@ -30,9 +30,11 @@ public class Telefone {
 
     @Override
     public String toString() {
-        return "Telefone{" +
-                "ddd=" + ddd +
-                ", numero=" + numero +
-                '}';
+        return String.format("""
+            Telefone {
+            \tDDD: %d
+            \tnúmero: %d
+            }
+        """, ddd, numero);
     }
 }

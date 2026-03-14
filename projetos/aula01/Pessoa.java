@@ -42,10 +42,12 @@ public class Pessoa {
     // se não declararmos o toString, o da super Object é usado e ele determina que se imprima o <nome da cLasse>@<endereço do objeto na JVM>
     @Override
     public String toString() {
-        return "aula02.Pessoa{" +
-                "nome='" + nome + '\'' +
-                ", telefone='" + telefone + '\'' +
-                ", endereco='" + endereco + '\'' +
-                '}';
+        return String.format("""
+            Pessoa {
+            \tnome: %s
+            \ttelefone: %s
+            \tendereço: %s
+            }
+            """, nome, telefone, endereco);
     }
 }

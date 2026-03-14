@@ -33,9 +33,11 @@ public class Pessoa {
     @Override
     public String toString() {
 
-        return "aula02.Pessoa{" +
-                "nome='" + nome + '\'' +
-                ", idade='" + idade + '\'' +
-                '}';
+        return String.format("""
+            Pessoa {
+            \tnome: %s
+            \tidade: %d
+            }
+            """, nome, idade);
     }
 }
