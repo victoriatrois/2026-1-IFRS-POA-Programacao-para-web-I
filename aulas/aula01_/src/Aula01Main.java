@@ -1,5 +1,3 @@
-package aula01;
-
 public class Aula01Main {
     public static void main(String[] args) {
         Pessoa eu = new Pessoa();

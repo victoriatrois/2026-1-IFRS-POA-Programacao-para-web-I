@@ -1,5 +1,3 @@
-package aula02;
-
 import javax.swing.JOptionPane;
 
 public class Menu {

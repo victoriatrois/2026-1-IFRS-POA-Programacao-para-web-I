@@ -1,5 +1,3 @@
-package aula02;
-
 public class Depertamento {
     private String nome;
     private Funcionario gerente;

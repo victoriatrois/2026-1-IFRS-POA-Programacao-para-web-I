@@ -1,5 +1,3 @@
-package aula02;
-
 import java.util.ArrayList;
 
 public class Funcionario extends Pessoa {
@@ -55,7 +53,7 @@ public class Funcionario extends Pessoa {
         return String.format("""
             %s
             \tFuncionário {
-            \t\tsalario: %d
+            \t\tsalario: %f
             \t\tcargo: %s
             \t\ttelefones: %s
             \t}

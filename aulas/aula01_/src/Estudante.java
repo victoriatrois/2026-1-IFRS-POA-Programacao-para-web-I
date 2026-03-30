@@ -1,5 +1,3 @@
-package aula01;
-
 public class Estudante extends Pessoa {
     private long matricula;
     private String curso;

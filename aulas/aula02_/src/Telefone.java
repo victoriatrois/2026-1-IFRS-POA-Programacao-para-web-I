@@ -1,5 +1,3 @@
-package aula02;
-
 public class Telefone {
     private int ddd;
     private long numero;

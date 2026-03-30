@@ -1,5 +1,3 @@
-package aula01;
-
 public class Cpf {
     private long numero;
     private int digito;

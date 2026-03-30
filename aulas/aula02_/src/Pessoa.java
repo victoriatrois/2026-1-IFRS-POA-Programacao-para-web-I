@@ -1,5 +1,3 @@
-package aula02;
-
 // Toda classe herda da Object
 public class Pessoa {
     private String nome;
