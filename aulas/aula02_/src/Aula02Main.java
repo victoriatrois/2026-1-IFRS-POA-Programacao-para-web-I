@@ -4,8 +4,9 @@ import java.util.ArrayList;
 public class Aula02Main {
     public static void main(String[] args) {
         ArrayList<Funcionario> funcionarios = new ArrayList<>();
+        boolean continuar = true;
 
-        while (true) {
+        while (continuar) {
             switch (Menu.montaMenu()) {
                 case 1:
                     cadastrarFuncionario(funcionarios);
@@ -24,7 +25,8 @@ public class Aula02Main {
                     break;
                 case 6:
                     JOptionPane.showMessageDialog(null, "Encerrando a aula 02.");
-                    return;
+                    continuar = false;
+                    break;
                 default:
                     JOptionPane.showMessageDialog(null, "Opcao invalida.");
             }
