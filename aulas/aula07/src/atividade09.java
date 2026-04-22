@@ -26,7 +26,7 @@ void main() {
         System.out.println("Tipos primitivos não podem ser salvos.");
 
     } catch (IllegalStateException error) {
-        System.out.println("O arquivo foi corrompido.");
+        System.out.println("Estado inválido do fluxo de dados.");
 
     } catch (IOException error) {
         System.out.println("Erro ao ler no arquivo.");
